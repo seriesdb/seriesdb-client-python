@@ -10,7 +10,7 @@ define get_site_dir
 $(shell $(python-venv) -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())")
 endef
 
-init: create-env create-dirs install-deps set-path gen-protocol-code
+init: create-env create-dirs install-deps set-path
 
 create-env:
 	$(python-native) -m venv $(venv-dir)
