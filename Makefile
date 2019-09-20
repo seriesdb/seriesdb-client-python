@@ -38,5 +38,5 @@ run:
 test: init
 	$(nose)
 
-clean: clean-protocol-code
+clean:
 	rm -rf $(venv-dir) $(prj-dir)/build $(prj-dir)/dist ${prj-dir}/seriesdb_client.egg-info
