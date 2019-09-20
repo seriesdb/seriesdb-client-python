@@ -1,0 +1,42 @@
+prj-dir := $(shell pwd)
+src-dir := $(prj-dir)
+venv-dir := $(prj-dir)/venv
+python-native := python3
+python-venv := $(venv-dir)/bin/python
+nose := $(venv-dir)/bin/nose2
+pip := $(venv-dir)/bin/pip
+
+define get_site_dir
+$(shell $(python-venv) -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())")
+endef
+
+init: create-env create-dirs install-deps set-path gen-protocol-code
+
+create-env:
+	$(python-native) -m venv $(venv-dir)
+
+create-dirs:
+	mkdir -p log
+
+install-deps:
+	$(pip) install -r requirements.txt
+
+set-path:
+	echo $(src-dir) > $(call get_site_dir)/my.pth
+
+gen-protocol-code:
+	$(prj-dir)/bin/gen_protocol_code.sh
+
+clean-protocol-code:
+	$(prj-dir)/bin/clean_protocol_code.sh
+
+gen: clean-protocol-code gen-protocol-code
+
+run:
+	$(python-venv) $(filter-out $@, $(MAKECMDGOALS))
+
+test: init
+	$(nose)
+
+clean: clean-protocol-code
+	rm -rf $(venv-dir) $(prj-dir)/build $(prj-dir)/dist ${prj-dir}/seriesdb_client.egg-info
