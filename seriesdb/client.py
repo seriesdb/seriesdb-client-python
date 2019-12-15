@@ -169,10 +169,16 @@ class Client(object):
         )
         return get_values_between.values
 
-    async def destroy_table(self, table):
+    # async def destroy_table(self, table):
+    #     await self.__connection.wait_until_open()
+    #     return await self.__connection.request(
+    #         self.__build_destroy_table_req(table)
+    #     )
+
+    async def truncate_table(self, table):
         await self.__connection.wait_until_open()
         return await self.__connection.request(
-            self.__build_destroy_table_req(table)
+            self.__build_truncate_table_req(table)
         )
 
     async def rename_table(self, old_table, new_table):
@@ -328,10 +334,15 @@ class Client(object):
         get_values_between_req.limit = limit
         return get_values_between_req
 
-    def __build_destroy_table_req(self, table):
-        destroy_table_req = protocol_types.DestroyTableReq()
-        destroy_table_req.table = table
-        return destroy_table_req
+    # def __build_destroy_table_req(self, table):
+    #     destroy_table_req = protocol_types.DestroyTableReq()
+    #     destroy_table_req.table = table
+    #     return destroy_table_req
+
+    def __build_truncate_table_req(self, table):
+        truncate_table_req = protocol_types.TruncateTableReq()
+        truncate_table_req.table = table
+        return truncate_table_req
 
     def __build_rename_table_req(self, old_table, new_table):
         rename_table_req = protocol_types.RenameTableReq()

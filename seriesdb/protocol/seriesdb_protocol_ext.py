@@ -82,14 +82,22 @@ def encode_msg(msg):
         return (79).to_bytes(1, 'little', signed=False) + msg.SerializeToString()
     elif msg.__class__ == seriesdb_protocol_pb2.DestroyTableRep:
         return (80).to_bytes(1, 'little', signed=False) + msg.SerializeToString()
-    elif msg.__class__ == seriesdb_protocol_pb2.RenameTableReq:
+    elif msg.__class__ == seriesdb_protocol_pb2.TruncateTableReq:
         return (81).to_bytes(1, 'little', signed=False) + msg.SerializeToString()
-    elif msg.__class__ == seriesdb_protocol_pb2.RenameTableRep:
+    elif msg.__class__ == seriesdb_protocol_pb2.TruncateTableRep:
         return (82).to_bytes(1, 'little', signed=False) + msg.SerializeToString()
-    elif msg.__class__ == seriesdb_protocol_pb2.GetTablesReq:
+    elif msg.__class__ == seriesdb_protocol_pb2.RenameTableReq:
         return (83).to_bytes(1, 'little', signed=False) + msg.SerializeToString()
-    elif msg.__class__ == seriesdb_protocol_pb2.GetTablesRep:
+    elif msg.__class__ == seriesdb_protocol_pb2.RenameTableRep:
         return (84).to_bytes(1, 'little', signed=False) + msg.SerializeToString()
+    elif msg.__class__ == seriesdb_protocol_pb2.GetTablesReq:
+        return (85).to_bytes(1, 'little', signed=False) + msg.SerializeToString()
+    elif msg.__class__ == seriesdb_protocol_pb2.GetTablesRep:
+        return (86).to_bytes(1, 'little', signed=False) + msg.SerializeToString()
+    elif msg.__class__ == seriesdb_protocol_pb2.GetUpdatesSinceReq:
+        return (90).to_bytes(1, 'little', signed=False) + msg.SerializeToString()
+    elif msg.__class__ == seriesdb_protocol_pb2.GetUpdatesSinceRep:
+        return (91).to_bytes(1, 'little', signed=False) + msg.SerializeToString()
     elif msg.__class__ == seriesdb_protocol_pb2.OkRep:
         return (99).to_bytes(1, 'little', signed=False) + msg.SerializeToString()
     elif msg.__class__ == seriesdb_protocol_pb2.ErrorRep:
@@ -261,19 +269,35 @@ def decode_msg(encoded_msg):
         msg.ParseFromString(encoded_msg[1:])
         return msg
     elif msg_type_uint32 == 81:
-        msg = seriesdb_protocol_pb2.RenameTableReq()
+        msg = seriesdb_protocol_pb2.TruncateTableReq()
         msg.ParseFromString(encoded_msg[1:])
         return msg
     elif msg_type_uint32 == 82:
-        msg = seriesdb_protocol_pb2.RenameTableRep()
+        msg = seriesdb_protocol_pb2.TruncateTableRep()
         msg.ParseFromString(encoded_msg[1:])
         return msg
     elif msg_type_uint32 == 83:
-        msg = seriesdb_protocol_pb2.GetTablesReq()
+        msg = seriesdb_protocol_pb2.RenameTableReq()
         msg.ParseFromString(encoded_msg[1:])
         return msg
     elif msg_type_uint32 == 84:
+        msg = seriesdb_protocol_pb2.RenameTableRep()
+        msg.ParseFromString(encoded_msg[1:])
+        return msg
+    elif msg_type_uint32 == 85:
+        msg = seriesdb_protocol_pb2.GetTablesReq()
+        msg.ParseFromString(encoded_msg[1:])
+        return msg
+    elif msg_type_uint32 == 86:
         msg = seriesdb_protocol_pb2.GetTablesRep()
+        msg.ParseFromString(encoded_msg[1:])
+        return msg
+    elif msg_type_uint32 == 90:
+        msg = seriesdb_protocol_pb2.GetUpdatesSinceReq()
+        msg.ParseFromString(encoded_msg[1:])
+        return msg
+    elif msg_type_uint32 == 91:
+        msg = seriesdb_protocol_pb2.GetUpdatesSinceRep()
         msg.ParseFromString(encoded_msg[1:])
         return msg
     elif msg_type_uint32 == 99:

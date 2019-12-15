@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='seriesdb_protocol.proto',
   package='seriesdb.protocol',
   syntax='proto3',
-  serialized_pb=_b('\n\x17seriesdb_protocol.proto\x12\x11seriesdb.protocol\"\x1c\n\x07PingReq\x12\x11\n\tround_ref\x18\x0f \x01(\r\"\x1c\n\x07PingRep\x12\x11\n\tround_ref\x18\x0f \x01(\r\"L\n\nSetRowsReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x0c\n\x04keys\x18\x02 \x03(\x0c\x12\x0e\n\x06values\x18\x03 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"\x1f\n\nSetRowsRep\x12\x11\n\tround_ref\x18\x0f \x01(\r\"R\n\x12\x44\x65leteRowsSinceReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05limit\x18\x03 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"\'\n\x12\x44\x65leteRowsSinceRep\x12\x11\n\tround_ref\x18\x0f \x01(\r\"2\n\x0eGetFirstRowReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"?\n\x0eGetFirstRowRep\x12\x0b\n\x03key\x18\x01 \x01(\x0c\x12\r\n\x05value\x18\x02 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"1\n\rGetLastRowReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\">\n\rGetLastRowRep\x12\x0b\n\x03key\x18\x01 \x01(\x0c\x12\r\n\x05value\x18\x02 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"6\n\x12GetBoundaryRowsReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"u\n\x12GetBoundaryRowsRep\x12\x11\n\tfirst_key\x18\x01 \x01(\x0c\x12\x13\n\x0b\x66irst_value\x18\x02 \x01(\x0c\x12\x10\n\x08last_key\x18\x03 \x01(\x0c\x12\x12\n\nlast_value\x18\x04 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"O\n\x0fGetRowsSinceReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05limit\x18\x03 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"B\n\x0fGetRowsSinceRep\x12\x0c\n\x04keys\x18\x01 \x03(\x0c\x12\x0e\n\x06values\x18\x02 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"F\n\x13GetRowsUntilLastReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\r\n\x05limit\x18\x02 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"F\n\x13GetRowsUntilLastRep\x12\x0c\n\x04keys\x18\x01 \x03(\x0c\x12\x0e\n\x06values\x18\x02 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"O\n\x0fGetRowsUntilReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05limit\x18\x03 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"B\n\x0fGetRowsUntilRep\x12\x0c\n\x04keys\x18\x01 \x03(\x0c\x12\x0e\n\x06values\x18\x02 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"h\n\x11GetRowsBetweenReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tbegin_key\x18\x02 \x01(\x0c\x12\x0f\n\x07\x65nd_key\x18\x03 \x01(\x0c\x12\r\n\x05limit\x18\x04 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"D\n\x11GetRowsBetweenRep\x12\x0c\n\x04keys\x18\x01 \x03(\x0c\x12\x0e\n\x06values\x18\x02 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"2\n\x0eGetFirstKeyReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"0\n\x0eGetFirstKeyRep\x12\x0b\n\x03key\x18\x01 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"1\n\rGetLastKeyReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"/\n\rGetLastKeyRep\x12\x0b\n\x03key\x18\x01 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"6\n\x12GetBoundaryKeysReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"L\n\x12GetBoundaryKeysRep\x12\x11\n\tfirst_key\x18\x01 \x01(\x0c\x12\x10\n\x08last_key\x18\x02 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"<\n\x0bGetValueReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"/\n\x0bGetValueRep\x12\r\n\x05value\x18\x01 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"A\n\x12GetNthLastValueReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\t\n\x01n\x18\x02 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"6\n\x12GetNthLastValueRep\x12\r\n\x05value\x18\x01 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"Q\n\x11GetValuesSinceReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05limit\x18\x03 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"6\n\x11GetValuesSinceRep\x12\x0e\n\x06values\x18\x01 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"H\n\x15GetValuesUntilLastReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\r\n\x05limit\x18\x02 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\":\n\x15GetValuesUntilLastRep\x12\x0e\n\x06values\x18\x01 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"Q\n\x11GetValuesUntilReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05limit\x18\x03 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"6\n\x11GetValuesUntilRep\x12\x0e\n\x06values\x18\x01 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"j\n\x13GetValuesBetweenReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tbegin_key\x18\x02 \x01(\x0c\x12\x0f\n\x07\x65nd_key\x18\x03 \x01(\x0c\x12\r\n\x05limit\x18\x04 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"8\n\x13GetValuesBetweenRep\x12\x0e\n\x06values\x18\x01 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"3\n\x0f\x44\x65stroyTableReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"$\n\x0f\x44\x65stroyTableRep\x12\x11\n\tround_ref\x18\x0f \x01(\r\"I\n\x0eRenameTableReq\x12\x11\n\told_table\x18\x01 \x01(\t\x12\x11\n\tnew_table\x18\x02 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"#\n\x0eRenameTableRep\x12\x11\n\tround_ref\x18\x0f \x01(\r\"!\n\x0cGetTablesReq\x12\x11\n\tround_ref\x18\x0f \x01(\r\"=\n\x0cGetTablesRep\x12\r\n\x05names\x18\x01 \x03(\t\x12\x0b\n\x03ids\x18\x02 \x03(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"\x1a\n\x05OkRep\x12\x11\n\tround_ref\x18\x0f \x01(\r\"9\n\x08\x45rrorRep\x12\x0c\n\x04\x63ode\x18\x01 \x01(\x05\x12\x0c\n\x04\x64\x65sc\x18\x02 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r*\xd3\x08\n\x07MsgType\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x0c\n\x08PING_REQ\x10\x01\x12\x0c\n\x08PING_REP\x10\x02\x12\x10\n\x0cSET_ROWS_REQ\x10\x03\x12\x10\n\x0cSET_ROWS_REP\x10\x04\x12\x19\n\x15\x44\x45LETE_ROWS_SINCE_REQ\x10\x0f\x12\x19\n\x15\x44\x45LETE_ROWS_SINCE_REP\x10\x10\x12\x15\n\x11GET_FIRST_ROW_REQ\x10\x1b\x12\x15\n\x11GET_FIRST_ROW_REP\x10\x1c\x12\x14\n\x10GET_LAST_ROW_REQ\x10\x1d\x12\x14\n\x10GET_LAST_ROW_REP\x10\x1e\x12\x19\n\x15GET_BOUNDARY_ROWS_REQ\x10#\x12\x19\n\x15GET_BOUNDARY_ROWS_REP\x10$\x12\x16\n\x12GET_ROWS_SINCE_REQ\x10%\x12\x16\n\x12GET_ROWS_SINCE_REP\x10&\x12\x16\n\x12GET_ROWS_UNTIL_REQ\x10\'\x12\x16\n\x12GET_ROWS_UNTIL_REP\x10(\x12\x1b\n\x17GET_ROWS_UNTIL_LAST_REQ\x10+\x12\x1b\n\x17GET_ROWS_UNTIL_LAST_REP\x10,\x12\x18\n\x14GET_ROWS_BETWEEN_REQ\x10-\x12\x18\n\x14GET_ROWS_BETWEEN_REP\x10.\x12\x15\n\x11GET_FIRST_KEY_REQ\x10/\x12\x15\n\x11GET_FIRST_KEY_REP\x10\x30\x12\x14\n\x10GET_LAST_KEY_REQ\x10\x31\x12\x14\n\x10GET_LAST_KEY_REP\x10\x32\x12\x19\n\x15GET_BOUNDARY_KEYS_REQ\x10\x37\x12\x19\n\x15GET_BOUNDARY_KEYS_REP\x10\x38\x12\x11\n\rGET_VALUE_REQ\x10\x39\x12\x11\n\rGET_VALUE_REP\x10:\x12\x1a\n\x16GET_NTH_LAST_VALUE_REQ\x10\x41\x12\x1a\n\x16GET_NTH_LAST_VALUE_REP\x10\x42\x12\x18\n\x14GET_VALUES_SINCE_REQ\x10\x43\x12\x18\n\x14GET_VALUES_SINCE_REP\x10\x44\x12\x18\n\x14GET_VALUES_UNTIL_REQ\x10\x45\x12\x18\n\x14GET_VALUES_UNTIL_REP\x10\x46\x12\x1d\n\x19GET_VALUES_UNTIL_LAST_REQ\x10I\x12\x1d\n\x19GET_VALUES_UNTIL_LAST_REP\x10J\x12\x1a\n\x16GET_VALUES_BETWEEN_REQ\x10K\x12\x1a\n\x16GET_VALUES_BETWEEN_REP\x10L\x12\x15\n\x11\x44\x45STROY_TABLE_REQ\x10O\x12\x15\n\x11\x44\x45STROY_TABLE_REP\x10P\x12\x14\n\x10RENAME_TABLE_REQ\x10Q\x12\x14\n\x10RENAME_TABLE_REP\x10R\x12\x12\n\x0eGET_TABLES_REQ\x10S\x12\x12\n\x0eGET_TABLES_REP\x10T\x12\n\n\x06OK_REP\x10\x63\x12\r\n\tERROR_REP\x10\x64\x62\x06proto3')
+  serialized_pb=_b('\n\x17seriesdb_protocol.proto\x12\x11seriesdb.protocol\"\x1c\n\x07PingReq\x12\x11\n\tround_ref\x18\x0f \x01(\r\"\x1c\n\x07PingRep\x12\x11\n\tround_ref\x18\x0f \x01(\r\"L\n\nSetRowsReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x0c\n\x04keys\x18\x02 \x03(\x0c\x12\x0e\n\x06values\x18\x03 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"\x1f\n\nSetRowsRep\x12\x11\n\tround_ref\x18\x0f \x01(\r\"R\n\x12\x44\x65leteRowsSinceReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05limit\x18\x03 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"\'\n\x12\x44\x65leteRowsSinceRep\x12\x11\n\tround_ref\x18\x0f \x01(\r\"2\n\x0eGetFirstRowReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"?\n\x0eGetFirstRowRep\x12\x0b\n\x03key\x18\x01 \x01(\x0c\x12\r\n\x05value\x18\x02 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"1\n\rGetLastRowReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\">\n\rGetLastRowRep\x12\x0b\n\x03key\x18\x01 \x01(\x0c\x12\r\n\x05value\x18\x02 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"6\n\x12GetBoundaryRowsReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"u\n\x12GetBoundaryRowsRep\x12\x11\n\tfirst_key\x18\x01 \x01(\x0c\x12\x13\n\x0b\x66irst_value\x18\x02 \x01(\x0c\x12\x10\n\x08last_key\x18\x03 \x01(\x0c\x12\x12\n\nlast_value\x18\x04 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"O\n\x0fGetRowsSinceReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05limit\x18\x03 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"B\n\x0fGetRowsSinceRep\x12\x0c\n\x04keys\x18\x01 \x03(\x0c\x12\x0e\n\x06values\x18\x02 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"F\n\x13GetRowsUntilLastReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\r\n\x05limit\x18\x02 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"F\n\x13GetRowsUntilLastRep\x12\x0c\n\x04keys\x18\x01 \x03(\x0c\x12\x0e\n\x06values\x18\x02 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"O\n\x0fGetRowsUntilReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05limit\x18\x03 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"B\n\x0fGetRowsUntilRep\x12\x0c\n\x04keys\x18\x01 \x03(\x0c\x12\x0e\n\x06values\x18\x02 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"h\n\x11GetRowsBetweenReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tbegin_key\x18\x02 \x01(\x0c\x12\x0f\n\x07\x65nd_key\x18\x03 \x01(\x0c\x12\r\n\x05limit\x18\x04 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"D\n\x11GetRowsBetweenRep\x12\x0c\n\x04keys\x18\x01 \x03(\x0c\x12\x0e\n\x06values\x18\x02 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"2\n\x0eGetFirstKeyReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"0\n\x0eGetFirstKeyRep\x12\x0b\n\x03key\x18\x01 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"1\n\rGetLastKeyReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"/\n\rGetLastKeyRep\x12\x0b\n\x03key\x18\x01 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"6\n\x12GetBoundaryKeysReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"L\n\x12GetBoundaryKeysRep\x12\x11\n\tfirst_key\x18\x01 \x01(\x0c\x12\x10\n\x08last_key\x18\x02 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"<\n\x0bGetValueReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"/\n\x0bGetValueRep\x12\r\n\x05value\x18\x01 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"A\n\x12GetNthLastValueReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\t\n\x01n\x18\x02 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"6\n\x12GetNthLastValueRep\x12\r\n\x05value\x18\x01 \x01(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"Q\n\x11GetValuesSinceReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05limit\x18\x03 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"6\n\x11GetValuesSinceRep\x12\x0e\n\x06values\x18\x01 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"H\n\x15GetValuesUntilLastReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\r\n\x05limit\x18\x02 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\":\n\x15GetValuesUntilLastRep\x12\x0e\n\x06values\x18\x01 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"Q\n\x11GetValuesUntilReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x0b\n\x03key\x18\x02 \x01(\x0c\x12\r\n\x05limit\x18\x03 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"6\n\x11GetValuesUntilRep\x12\x0e\n\x06values\x18\x01 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"j\n\x13GetValuesBetweenReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tbegin_key\x18\x02 \x01(\x0c\x12\x0f\n\x07\x65nd_key\x18\x03 \x01(\x0c\x12\r\n\x05limit\x18\x04 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"8\n\x13GetValuesBetweenRep\x12\x0e\n\x06values\x18\x01 \x03(\x0c\x12\x11\n\tround_ref\x18\x0f \x01(\r\"3\n\x0f\x44\x65stroyTableReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"$\n\x0f\x44\x65stroyTableRep\x12\x11\n\tround_ref\x18\x0f \x01(\r\"4\n\x10TruncateTableReq\x12\r\n\x05table\x18\x01 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"%\n\x10TruncateTableRep\x12\x11\n\tround_ref\x18\x0f \x01(\r\"I\n\x0eRenameTableReq\x12\x11\n\told_table\x18\x01 \x01(\t\x12\x11\n\tnew_table\x18\x02 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"#\n\x0eRenameTableRep\x12\x11\n\tround_ref\x18\x0f \x01(\r\"!\n\x0cGetTablesReq\x12\x11\n\tround_ref\x18\x0f \x01(\r\"=\n\x0cGetTablesRep\x12\r\n\x05names\x18\x01 \x03(\t\x12\x0b\n\x03ids\x18\x02 \x03(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"B\n\x12GetUpdatesSinceReq\x12\n\n\x02sn\x18\x01 \x01(\x04\x12\r\n\x05limit\x18\x02 \x01(\r\x12\x11\n\tround_ref\x18\x0f \x01(\r\"_\n\x12GetUpdatesSinceRep\x12\x36\n\x0eupdate_batches\x18\x01 \x03(\x0b\x32\x1e.seriesdb.protocol.UpdateBatch\x12\x11\n\tround_ref\x18\x0f \x01(\r\"\x1a\n\x05OkRep\x12\x11\n\tround_ref\x18\x0f \x01(\r\"9\n\x08\x45rrorRep\x12\x0c\n\x04\x63ode\x18\x01 \x01(\x05\x12\x0c\n\x04\x64\x65sc\x18\x02 \x01(\t\x12\x11\n\tround_ref\x18\x0f \x01(\r\"L\n\x0bUpdateBatch\x12\n\n\x02sn\x18\x01 \x01(\x04\x12\x31\n\x07updates\x18\x02 \x03(\x0b\x32 .seriesdb.protocol.UpdateWrapper\"\xba\x02\n\rUpdateWrapper\x12\x33\n\x03put\x18\x01 \x01(\x0b\x32$.seriesdb.protocol.UpdateWrapper.PutH\x00\x12\x39\n\x06\x64\x65lete\x18\x02 \x01(\x0b\x32\'.seriesdb.protocol.UpdateWrapper.DeleteH\x00\x12\x44\n\x0c\x64\x65lete_range\x18\x03 \x01(\x0b\x32,.seriesdb.protocol.UpdateWrapper.DeleteRangeH\x00\x1a!\n\x03Put\x12\x0b\n\x03key\x18\x01 \x01(\x0c\x12\r\n\x05value\x18\x02 \x01(\x0c\x1a\x15\n\x06\x44\x65lete\x12\x0b\n\x03key\x18\x01 \x01(\x0c\x1a/\n\x0b\x44\x65leteRange\x12\x10\n\x08\x66rom_key\x18\x01 \x01(\x0c\x12\x0e\n\x06to_key\x18\x02 \x01(\x0c\x42\x08\n\x06update*\xb9\t\n\x07MsgType\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x0c\n\x08PING_REQ\x10\x01\x12\x0c\n\x08PING_REP\x10\x02\x12\x10\n\x0cSET_ROWS_REQ\x10\x03\x12\x10\n\x0cSET_ROWS_REP\x10\x04\x12\x19\n\x15\x44\x45LETE_ROWS_SINCE_REQ\x10\x0f\x12\x19\n\x15\x44\x45LETE_ROWS_SINCE_REP\x10\x10\x12\x15\n\x11GET_FIRST_ROW_REQ\x10\x1b\x12\x15\n\x11GET_FIRST_ROW_REP\x10\x1c\x12\x14\n\x10GET_LAST_ROW_REQ\x10\x1d\x12\x14\n\x10GET_LAST_ROW_REP\x10\x1e\x12\x19\n\x15GET_BOUNDARY_ROWS_REQ\x10#\x12\x19\n\x15GET_BOUNDARY_ROWS_REP\x10$\x12\x16\n\x12GET_ROWS_SINCE_REQ\x10%\x12\x16\n\x12GET_ROWS_SINCE_REP\x10&\x12\x16\n\x12GET_ROWS_UNTIL_REQ\x10\'\x12\x16\n\x12GET_ROWS_UNTIL_REP\x10(\x12\x1b\n\x17GET_ROWS_UNTIL_LAST_REQ\x10+\x12\x1b\n\x17GET_ROWS_UNTIL_LAST_REP\x10,\x12\x18\n\x14GET_ROWS_BETWEEN_REQ\x10-\x12\x18\n\x14GET_ROWS_BETWEEN_REP\x10.\x12\x15\n\x11GET_FIRST_KEY_REQ\x10/\x12\x15\n\x11GET_FIRST_KEY_REP\x10\x30\x12\x14\n\x10GET_LAST_KEY_REQ\x10\x31\x12\x14\n\x10GET_LAST_KEY_REP\x10\x32\x12\x19\n\x15GET_BOUNDARY_KEYS_REQ\x10\x37\x12\x19\n\x15GET_BOUNDARY_KEYS_REP\x10\x38\x12\x11\n\rGET_VALUE_REQ\x10\x39\x12\x11\n\rGET_VALUE_REP\x10:\x12\x1a\n\x16GET_NTH_LAST_VALUE_REQ\x10\x41\x12\x1a\n\x16GET_NTH_LAST_VALUE_REP\x10\x42\x12\x18\n\x14GET_VALUES_SINCE_REQ\x10\x43\x12\x18\n\x14GET_VALUES_SINCE_REP\x10\x44\x12\x18\n\x14GET_VALUES_UNTIL_REQ\x10\x45\x12\x18\n\x14GET_VALUES_UNTIL_REP\x10\x46\x12\x1d\n\x19GET_VALUES_UNTIL_LAST_REQ\x10I\x12\x1d\n\x19GET_VALUES_UNTIL_LAST_REP\x10J\x12\x1a\n\x16GET_VALUES_BETWEEN_REQ\x10K\x12\x1a\n\x16GET_VALUES_BETWEEN_REP\x10L\x12\x15\n\x11\x44\x45STROY_TABLE_REQ\x10O\x12\x15\n\x11\x44\x45STROY_TABLE_REP\x10P\x12\x16\n\x12TRUNCATE_TABLE_REQ\x10Q\x12\x16\n\x12TRUNCATE_TABLE_REP\x10R\x12\x14\n\x10RENAME_TABLE_REQ\x10S\x12\x14\n\x10RENAME_TABLE_REP\x10T\x12\x12\n\x0eGET_TABLES_REQ\x10U\x12\x12\n\x0eGET_TABLES_REP\x10V\x12\x19\n\x15GET_UPDATES_SINCE_REQ\x10Z\x12\x19\n\x15GET_UPDATES_SINCE_REP\x10[\x12\n\n\x06OK_REP\x10\x63\x12\r\n\tERROR_REP\x10\x64\x62\x06proto3')
 )
 
 _MSGTYPE = _descriptor.EnumDescriptor(
@@ -194,34 +194,50 @@ _MSGTYPE = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='RENAME_TABLE_REQ', index=41, number=81,
+      name='TRUNCATE_TABLE_REQ', index=41, number=81,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='RENAME_TABLE_REP', index=42, number=82,
+      name='TRUNCATE_TABLE_REP', index=42, number=82,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='GET_TABLES_REQ', index=43, number=83,
+      name='RENAME_TABLE_REQ', index=43, number=83,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='GET_TABLES_REP', index=44, number=84,
+      name='RENAME_TABLE_REP', index=44, number=84,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='OK_REP', index=45, number=99,
+      name='GET_TABLES_REQ', index=45, number=85,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='ERROR_REP', index=46, number=100,
+      name='GET_TABLES_REP', index=46, number=86,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='GET_UPDATES_SINCE_REQ', index=47, number=90,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='GET_UPDATES_SINCE_REP', index=48, number=91,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='OK_REP', index=49, number=99,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='ERROR_REP', index=50, number=100,
       options=None,
       type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=2904,
-  serialized_end=4011,
+  serialized_start=3557,
+  serialized_end=4766,
 )
 _sym_db.RegisterEnumDescriptor(_MSGTYPE)
 
@@ -267,10 +283,14 @@ GET_VALUES_BETWEEN_REQ = 75
 GET_VALUES_BETWEEN_REP = 76
 DESTROY_TABLE_REQ = 79
 DESTROY_TABLE_REP = 80
-RENAME_TABLE_REQ = 81
-RENAME_TABLE_REP = 82
-GET_TABLES_REQ = 83
-GET_TABLES_REP = 84
+TRUNCATE_TABLE_REQ = 81
+TRUNCATE_TABLE_REP = 82
+RENAME_TABLE_REQ = 83
+RENAME_TABLE_REP = 84
+GET_TABLES_REQ = 85
+GET_TABLES_REP = 86
+GET_UPDATES_SINCE_REQ = 90
+GET_UPDATES_SINCE_REP = 91
 OK_REP = 99
 ERROR_REP = 100
 
@@ -1985,6 +2005,75 @@ _DESTROYTABLEREP = _descriptor.Descriptor(
 )
 
 
+_TRUNCATETABLEREQ = _descriptor.Descriptor(
+  name='TruncateTableReq',
+  full_name='seriesdb.protocol.TruncateTableReq',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='table', full_name='seriesdb.protocol.TruncateTableReq.table', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='round_ref', full_name='seriesdb.protocol.TruncateTableReq.round_ref', index=1,
+      number=15, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2606,
+  serialized_end=2658,
+)
+
+
+_TRUNCATETABLEREP = _descriptor.Descriptor(
+  name='TruncateTableRep',
+  full_name='seriesdb.protocol.TruncateTableRep',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='round_ref', full_name='seriesdb.protocol.TruncateTableRep.round_ref', index=0,
+      number=15, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2660,
+  serialized_end=2697,
+)
+
+
 _RENAMETABLEREQ = _descriptor.Descriptor(
   name='RenameTableReq',
   full_name='seriesdb.protocol.RenameTableReq',
@@ -2025,8 +2114,8 @@ _RENAMETABLEREQ = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2606,
-  serialized_end=2679,
+  serialized_start=2699,
+  serialized_end=2772,
 )
 
 
@@ -2056,8 +2145,8 @@ _RENAMETABLEREP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2681,
-  serialized_end=2716,
+  serialized_start=2774,
+  serialized_end=2809,
 )
 
 
@@ -2087,8 +2176,8 @@ _GETTABLESREQ = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2718,
-  serialized_end=2751,
+  serialized_start=2811,
+  serialized_end=2844,
 )
 
 
@@ -2132,8 +2221,91 @@ _GETTABLESREP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2753,
-  serialized_end=2814,
+  serialized_start=2846,
+  serialized_end=2907,
+)
+
+
+_GETUPDATESSINCEREQ = _descriptor.Descriptor(
+  name='GetUpdatesSinceReq',
+  full_name='seriesdb.protocol.GetUpdatesSinceReq',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='sn', full_name='seriesdb.protocol.GetUpdatesSinceReq.sn', index=0,
+      number=1, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='limit', full_name='seriesdb.protocol.GetUpdatesSinceReq.limit', index=1,
+      number=2, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='round_ref', full_name='seriesdb.protocol.GetUpdatesSinceReq.round_ref', index=2,
+      number=15, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2909,
+  serialized_end=2975,
+)
+
+
+_GETUPDATESSINCEREP = _descriptor.Descriptor(
+  name='GetUpdatesSinceRep',
+  full_name='seriesdb.protocol.GetUpdatesSinceRep',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='update_batches', full_name='seriesdb.protocol.GetUpdatesSinceRep.update_batches', index=0,
+      number=1, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='round_ref', full_name='seriesdb.protocol.GetUpdatesSinceRep.round_ref', index=1,
+      number=15, type=13, cpp_type=3, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=2977,
+  serialized_end=3072,
 )
 
 
@@ -2163,8 +2335,8 @@ _OKREP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2816,
-  serialized_end=2842,
+  serialized_start=3074,
+  serialized_end=3100,
 )
 
 
@@ -2208,10 +2380,217 @@ _ERRORREP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2844,
-  serialized_end=2901,
+  serialized_start=3102,
+  serialized_end=3159,
 )
 
+
+_UPDATEBATCH = _descriptor.Descriptor(
+  name='UpdateBatch',
+  full_name='seriesdb.protocol.UpdateBatch',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='sn', full_name='seriesdb.protocol.UpdateBatch.sn', index=0,
+      number=1, type=4, cpp_type=4, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='updates', full_name='seriesdb.protocol.UpdateBatch.updates', index=1,
+      number=2, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3161,
+  serialized_end=3237,
+)
+
+
+_UPDATEWRAPPER_PUT = _descriptor.Descriptor(
+  name='Put',
+  full_name='seriesdb.protocol.UpdateWrapper.Put',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='key', full_name='seriesdb.protocol.UpdateWrapper.Put.key', index=0,
+      number=1, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b(""),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='value', full_name='seriesdb.protocol.UpdateWrapper.Put.value', index=1,
+      number=2, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b(""),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3439,
+  serialized_end=3472,
+)
+
+_UPDATEWRAPPER_DELETE = _descriptor.Descriptor(
+  name='Delete',
+  full_name='seriesdb.protocol.UpdateWrapper.Delete',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='key', full_name='seriesdb.protocol.UpdateWrapper.Delete.key', index=0,
+      number=1, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b(""),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3474,
+  serialized_end=3495,
+)
+
+_UPDATEWRAPPER_DELETERANGE = _descriptor.Descriptor(
+  name='DeleteRange',
+  full_name='seriesdb.protocol.UpdateWrapper.DeleteRange',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='from_key', full_name='seriesdb.protocol.UpdateWrapper.DeleteRange.from_key', index=0,
+      number=1, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b(""),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='to_key', full_name='seriesdb.protocol.UpdateWrapper.DeleteRange.to_key', index=1,
+      number=2, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b(""),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=3497,
+  serialized_end=3544,
+)
+
+_UPDATEWRAPPER = _descriptor.Descriptor(
+  name='UpdateWrapper',
+  full_name='seriesdb.protocol.UpdateWrapper',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='put', full_name='seriesdb.protocol.UpdateWrapper.put', index=0,
+      number=1, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='delete', full_name='seriesdb.protocol.UpdateWrapper.delete', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='delete_range', full_name='seriesdb.protocol.UpdateWrapper.delete_range', index=2,
+      number=3, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[_UPDATEWRAPPER_PUT, _UPDATEWRAPPER_DELETE, _UPDATEWRAPPER_DELETERANGE, ],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+    _descriptor.OneofDescriptor(
+      name='update', full_name='seriesdb.protocol.UpdateWrapper.update',
+      index=0, containing_type=None, fields=[]),
+  ],
+  serialized_start=3240,
+  serialized_end=3554,
+)
+
+_GETUPDATESSINCEREP.fields_by_name['update_batches'].message_type = _UPDATEBATCH
+_UPDATEBATCH.fields_by_name['updates'].message_type = _UPDATEWRAPPER
+_UPDATEWRAPPER_PUT.containing_type = _UPDATEWRAPPER
+_UPDATEWRAPPER_DELETE.containing_type = _UPDATEWRAPPER
+_UPDATEWRAPPER_DELETERANGE.containing_type = _UPDATEWRAPPER
+_UPDATEWRAPPER.fields_by_name['put'].message_type = _UPDATEWRAPPER_PUT
+_UPDATEWRAPPER.fields_by_name['delete'].message_type = _UPDATEWRAPPER_DELETE
+_UPDATEWRAPPER.fields_by_name['delete_range'].message_type = _UPDATEWRAPPER_DELETERANGE
+_UPDATEWRAPPER.oneofs_by_name['update'].fields.append(
+  _UPDATEWRAPPER.fields_by_name['put'])
+_UPDATEWRAPPER.fields_by_name['put'].containing_oneof = _UPDATEWRAPPER.oneofs_by_name['update']
+_UPDATEWRAPPER.oneofs_by_name['update'].fields.append(
+  _UPDATEWRAPPER.fields_by_name['delete'])
+_UPDATEWRAPPER.fields_by_name['delete'].containing_oneof = _UPDATEWRAPPER.oneofs_by_name['update']
+_UPDATEWRAPPER.oneofs_by_name['update'].fields.append(
+  _UPDATEWRAPPER.fields_by_name['delete_range'])
+_UPDATEWRAPPER.fields_by_name['delete_range'].containing_oneof = _UPDATEWRAPPER.oneofs_by_name['update']
 DESCRIPTOR.message_types_by_name['PingReq'] = _PINGREQ
 DESCRIPTOR.message_types_by_name['PingRep'] = _PINGREP
 DESCRIPTOR.message_types_by_name['SetRowsReq'] = _SETROWSREQ
@@ -2252,12 +2631,18 @@ DESCRIPTOR.message_types_by_name['GetValuesBetweenReq'] = _GETVALUESBETWEENREQ
 DESCRIPTOR.message_types_by_name['GetValuesBetweenRep'] = _GETVALUESBETWEENREP
 DESCRIPTOR.message_types_by_name['DestroyTableReq'] = _DESTROYTABLEREQ
 DESCRIPTOR.message_types_by_name['DestroyTableRep'] = _DESTROYTABLEREP
+DESCRIPTOR.message_types_by_name['TruncateTableReq'] = _TRUNCATETABLEREQ
+DESCRIPTOR.message_types_by_name['TruncateTableRep'] = _TRUNCATETABLEREP
 DESCRIPTOR.message_types_by_name['RenameTableReq'] = _RENAMETABLEREQ
 DESCRIPTOR.message_types_by_name['RenameTableRep'] = _RENAMETABLEREP
 DESCRIPTOR.message_types_by_name['GetTablesReq'] = _GETTABLESREQ
 DESCRIPTOR.message_types_by_name['GetTablesRep'] = _GETTABLESREP
+DESCRIPTOR.message_types_by_name['GetUpdatesSinceReq'] = _GETUPDATESSINCEREQ
+DESCRIPTOR.message_types_by_name['GetUpdatesSinceRep'] = _GETUPDATESSINCEREP
 DESCRIPTOR.message_types_by_name['OkRep'] = _OKREP
 DESCRIPTOR.message_types_by_name['ErrorRep'] = _ERRORREP
+DESCRIPTOR.message_types_by_name['UpdateBatch'] = _UPDATEBATCH
+DESCRIPTOR.message_types_by_name['UpdateWrapper'] = _UPDATEWRAPPER
 DESCRIPTOR.enum_types_by_name['MsgType'] = _MSGTYPE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -2541,6 +2926,20 @@ DestroyTableRep = _reflection.GeneratedProtocolMessageType('DestroyTableRep', (_
   ))
 _sym_db.RegisterMessage(DestroyTableRep)
 
+TruncateTableReq = _reflection.GeneratedProtocolMessageType('TruncateTableReq', (_message.Message,), dict(
+  DESCRIPTOR = _TRUNCATETABLEREQ,
+  __module__ = 'seriesdb_protocol_pb2'
+  # @@protoc_insertion_point(class_scope:seriesdb.protocol.TruncateTableReq)
+  ))
+_sym_db.RegisterMessage(TruncateTableReq)
+
+TruncateTableRep = _reflection.GeneratedProtocolMessageType('TruncateTableRep', (_message.Message,), dict(
+  DESCRIPTOR = _TRUNCATETABLEREP,
+  __module__ = 'seriesdb_protocol_pb2'
+  # @@protoc_insertion_point(class_scope:seriesdb.protocol.TruncateTableRep)
+  ))
+_sym_db.RegisterMessage(TruncateTableRep)
+
 RenameTableReq = _reflection.GeneratedProtocolMessageType('RenameTableReq', (_message.Message,), dict(
   DESCRIPTOR = _RENAMETABLEREQ,
   __module__ = 'seriesdb_protocol_pb2'
@@ -2569,6 +2968,20 @@ GetTablesRep = _reflection.GeneratedProtocolMessageType('GetTablesRep', (_messag
   ))
 _sym_db.RegisterMessage(GetTablesRep)
 
+GetUpdatesSinceReq = _reflection.GeneratedProtocolMessageType('GetUpdatesSinceReq', (_message.Message,), dict(
+  DESCRIPTOR = _GETUPDATESSINCEREQ,
+  __module__ = 'seriesdb_protocol_pb2'
+  # @@protoc_insertion_point(class_scope:seriesdb.protocol.GetUpdatesSinceReq)
+  ))
+_sym_db.RegisterMessage(GetUpdatesSinceReq)
+
+GetUpdatesSinceRep = _reflection.GeneratedProtocolMessageType('GetUpdatesSinceRep', (_message.Message,), dict(
+  DESCRIPTOR = _GETUPDATESSINCEREP,
+  __module__ = 'seriesdb_protocol_pb2'
+  # @@protoc_insertion_point(class_scope:seriesdb.protocol.GetUpdatesSinceRep)
+  ))
+_sym_db.RegisterMessage(GetUpdatesSinceRep)
+
 OkRep = _reflection.GeneratedProtocolMessageType('OkRep', (_message.Message,), dict(
   DESCRIPTOR = _OKREP,
   __module__ = 'seriesdb_protocol_pb2'
@@ -2582,6 +2995,44 @@ ErrorRep = _reflection.GeneratedProtocolMessageType('ErrorRep', (_message.Messag
   # @@protoc_insertion_point(class_scope:seriesdb.protocol.ErrorRep)
   ))
 _sym_db.RegisterMessage(ErrorRep)
+
+UpdateBatch = _reflection.GeneratedProtocolMessageType('UpdateBatch', (_message.Message,), dict(
+  DESCRIPTOR = _UPDATEBATCH,
+  __module__ = 'seriesdb_protocol_pb2'
+  # @@protoc_insertion_point(class_scope:seriesdb.protocol.UpdateBatch)
+  ))
+_sym_db.RegisterMessage(UpdateBatch)
+
+UpdateWrapper = _reflection.GeneratedProtocolMessageType('UpdateWrapper', (_message.Message,), dict(
+
+  Put = _reflection.GeneratedProtocolMessageType('Put', (_message.Message,), dict(
+    DESCRIPTOR = _UPDATEWRAPPER_PUT,
+    __module__ = 'seriesdb_protocol_pb2'
+    # @@protoc_insertion_point(class_scope:seriesdb.protocol.UpdateWrapper.Put)
+    ))
+  ,
+
+  Delete = _reflection.GeneratedProtocolMessageType('Delete', (_message.Message,), dict(
+    DESCRIPTOR = _UPDATEWRAPPER_DELETE,
+    __module__ = 'seriesdb_protocol_pb2'
+    # @@protoc_insertion_point(class_scope:seriesdb.protocol.UpdateWrapper.Delete)
+    ))
+  ,
+
+  DeleteRange = _reflection.GeneratedProtocolMessageType('DeleteRange', (_message.Message,), dict(
+    DESCRIPTOR = _UPDATEWRAPPER_DELETERANGE,
+    __module__ = 'seriesdb_protocol_pb2'
+    # @@protoc_insertion_point(class_scope:seriesdb.protocol.UpdateWrapper.DeleteRange)
+    ))
+  ,
+  DESCRIPTOR = _UPDATEWRAPPER,
+  __module__ = 'seriesdb_protocol_pb2'
+  # @@protoc_insertion_point(class_scope:seriesdb.protocol.UpdateWrapper)
+  ))
+_sym_db.RegisterMessage(UpdateWrapper)
+_sym_db.RegisterMessage(UpdateWrapper.Put)
+_sym_db.RegisterMessage(UpdateWrapper.Delete)
+_sym_db.RegisterMessage(UpdateWrapper.DeleteRange)
 
 
 # @@protoc_insertion_point(module_scope)
